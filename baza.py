@@ -1,3 +1,4 @@
+import sqlite3
 import csv
 
 PARAM_FMT = ":{}"   # za SQLite
@@ -117,8 +118,8 @@ def pripravi_tabele(conn):
     uporabnik = Uporabnik(conn)
     izdelek = Izdelek(conn)
     oglas = Oglas(conn)
-    ujemanje = Ujemanje(conn)
-    return [uporabnik, izdelek, oglas, ujemanje]
+    return [uporabnik, izdelek, oglas]
+
 
 
 def izbrisi_tabele(tabele):
@@ -165,7 +166,7 @@ def ustvari_bazo_ce_ne_obstaja(conn):
 # TESTNI ZAGON (po želji)
 # ===================================
 
-# if __name__ == "__main__":
-#     conn = sqlite3.connect("moja_baza.db")
-#     ustvari_bazo(conn)
-#     print("Baza ustvarjena.")
+if __name__ == "__main__":
+     conn = sqlite3.connect("moja_baza.db")
+     ustvari_bazo(conn)
+     print("Baza ustvarjena.")
