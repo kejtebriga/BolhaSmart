@@ -15,6 +15,7 @@ class Uporabnik:
 
     @staticmethod
     def poisci_vse():
+        """Metoda, ki iz baze prebere use uporabnike in vrne tabelo objektov uporabnik."""
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         with conn:

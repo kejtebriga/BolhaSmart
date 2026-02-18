@@ -3,7 +3,8 @@ import csv
 
 BAZA = "moja_baza.db"
 
-def uvozi_skripto(skripta, baza):
+def uvozi_skripto(skripta, baza): 
+    """Naredimo tabele: uporabnik, oglas in kategorija"""
     try:
         conn = dbapi.connect(baza)
         cur = conn.cursor()
@@ -15,6 +16,7 @@ def uvozi_skripto(skripta, baza):
         conn.close()
 
 def uvozi_uporabnike(baza, csv_datoteka):
+    """Uvozimo podatke v tabela uporabnik iz datoteke uporabnik.csv"""
     try:
         conn = dbapi.connect(baza)
         with open(csv_datoteka, encoding='utf-8') as f:
@@ -30,6 +32,7 @@ def uvozi_uporabnike(baza, csv_datoteka):
 
 
 def uvozi_kategorije(baza, csv_datoteka):
+    """Uvozimo podatke v tabela kategorija iz datoteke kategorija.csv"""
     try:
         conn = dbapi.connect(baza)
         with open(csv_datoteka, encoding='utf-8') as f:
@@ -46,6 +49,7 @@ def uvozi_kategorije(baza, csv_datoteka):
 
 
 def uvozi_oglase(baza, csv_datoteka):
+    """Uvozimo podatke v tabela oglas iz datoteke oglas.csv"""
     try:
         conn = dbapi.connect(baza)
         with open(csv_datoteka, encoding='utf-8') as f:
