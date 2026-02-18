@@ -29,6 +29,7 @@ class Uporabnik:
 
     @staticmethod
     def poisci_po_id(uporabnik_id):
+        "Poišče enega uporabnika glede na ID."
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         with conn:
@@ -40,6 +41,7 @@ class Uporabnik:
             return None
         
     def vstavi_uporabnika(self):
+        "Vstavi trenutni objekt v bazo."
         conn = dbapi.connect(BAZA)
         with conn:
             cur = conn.cursor()
@@ -51,6 +53,7 @@ class Uporabnik:
     
     @staticmethod
     def poisci_po_email(email):
+        "Poišče uporabnika po email naslovu."
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         with conn:
@@ -72,11 +75,12 @@ class Kategorija:
 
     @staticmethod
     def poisci_vse():
+        "Vrne vse kategorije iz baze, urejene po nazivu."
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         with conn:
             cur = conn.cursor()
-            cur.execute("SELECT id, naziv FROM kategorija ORDER BY naziv")
+            cur.execute("SELECT id, naziv FROM kategorija ORDER BY id")
             kategorije = []
             for v in cur:
                 kategorije.append(Kategorija(v['id'], v['naziv']))
@@ -99,6 +103,7 @@ class Oglas:
 
     @staticmethod
     def poisci_vse():
+        "Vrne vse oglase iz baze."
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         with conn:
@@ -112,6 +117,7 @@ class Oglas:
 
     @staticmethod
     def poisci_po_id(id_oglasa):
+        "Poišče en oglas po ID-ju."
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         with conn:
@@ -126,7 +132,7 @@ class Oglas:
 
     @staticmethod
     def isci_po_besedilu(niz):
-        """Iskalnik po naslovu ali opisu (uporabno za trgovino)."""
+        "Vrne oglase, kjer se niz pojavi v naslovu ali opisu."
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         with conn:
@@ -138,6 +144,7 @@ class Oglas:
                             v['tip'], v['uporabnik_id'], v['kategorija_id'])
 
     def vstavi(self):
+        "Vstavi trenutni oglas v bazo."
         conn = dbapi.connect(BAZA)
         with conn:
             cur = conn.cursor()
@@ -149,6 +156,7 @@ class Oglas:
             
     @staticmethod
     def poisci_ujemanja(moj_oglas):
+        "Poišče ujemajoče oglase (ista kategorija, nasproten tip, skupne besede v naslovu)."
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
     
