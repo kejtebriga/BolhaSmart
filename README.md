@@ -9,7 +9,7 @@ Brskanje po kategorijah: Uporabnik izbere kategorijo, aplikacija pa prikaže ust
 Iskanje po ključnih besedah: Oglase je mogoče filtrirati glede na besedo, ki se pojavi v naslovu oglasa.\
 Filtriranje po ceni in tipu: Uporabnik lahko omeji izpis oglasov glede na maksimalno ceno ali izbere samo oglase za nakup oziroma prodajo.\
 Podroben ogled posameznega oglasa: S pomočjo ID-ja lahko uporabnik pridobi podrobne informacije o izbranem oglasu.\
-Oddaja oglasa s samodejnim ujemanjem: Ob objavi novega oglasa sistem samodejno poišče in prikaže nasprotne oglase, ki se ujemajo po kategoriji in ključni besedi iz naslova.\
+Oddaja oglasa s samodejnim ujemanjem: Ob objavi novega oglasa sistem samodejno poišče in prikaže nasprotne oglase, ki se ujemajo po kategoriji in ključni besedi iz naslova.
 
 ## Baza:
 Baza je sestavljena iz treh tabel.
