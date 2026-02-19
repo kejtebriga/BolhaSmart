@@ -34,15 +34,15 @@ def oddaj_oglas_z_matchmakingom():
 
     while True:
         try:
-            kat_id = int(input("Vnesi ID kategorije: "))
+            kat_id = int(input("Vnesi številko kategorije: "))
         except ValueError:
-            print("Napaka: ID mora biti številka!")
+            print("Napaka: številka ni pravilna")
             continue  
 
         if any(kat.id == kat_id for kat in kategorije):
             break  
         else:
-            print("Neveljaven ID kategorije! Poskusi znova.")
+            print("Napaka: številka ni pravilna")
 
 
     
