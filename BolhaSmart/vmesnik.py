@@ -83,21 +83,22 @@ def oddaj_oglas_z_matchmakingom():
 def glavni_meni():
     while True:
         print("\n" + "="*40)
-        print("       MOJ OGLASNIK - GLAVNI MENI")
+        print("       BOLHA-SMART")
         print("="*40)
-        print("1) Brskaj po vseh oglasih")
-        print("2) Išči oglase po ključni besedi")
-        print("3) ODDAJ OGLAS (in najdi ujemanja)")
-        print("4) Poglej podrobnosti oglasa (preko ID)")
-        print("5) Prikaži kontaktne podatke (preko ID oglasa)")
-        print("0) Izhod")
+        print("0 Izhod")
+        print("1 Prikaži vse oglase")
+        print("2 Išči s ključno besedo")
+        print("3 USTVARI OGLAS (in najdi ujemanja)")
+        print("4 Poglej podrobnosti oglasa")#(preko ID)
+        print("5 Prikaži kontaktne podatke")#(preko ID oglasa)
+        
         
         izbira = input("\nIzberi možnost: ")
         
         if izbira == "1":
             izpisi_tabelo_oglasov(Oglas.poisci_vse())
         elif izbira == "2":
-            niz = input("\nVpiši iskalni niz: ")
+            niz = input("\nKaj iščeš: ")
             izpisi_tabelo_oglasov(Oglas.isci_po_besedilu(niz))
         elif izbira == "3":
             oddaj_oglas_z_matchmakingom()
@@ -120,10 +121,10 @@ def glavni_meni():
                 print("Oglas ne obstaja.")
 
         elif izbira == "0":
-            print("Konec seje.")
             break
+        # gremo ven iz vmesnika
         else:
-            print("Neveljavna izbira.")
+            print("Neveljavno število.")
 
 if __name__ == "__main__":
     glavni_meni()
