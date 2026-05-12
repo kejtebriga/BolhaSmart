@@ -1,0 +1,340 @@
+% setdefault('naslov', 'Bolha Smart')
+% if not defined('uporabnik'):
+%     uporabnik = prijavljeni_uporabnik()
+% end
+% sporocilo = preberi_sporocilo()
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{naslov}} — Bolha Smart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" />
+    <style>
+        html, body {
+        height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        section.section {
+            flex: 1;
+        }
+        :root {
+            --oranzna: #FF6B1A;
+            --oranzna-temna: #E85A08;
+            --rumena: #FFD600;
+            --rumena-svetla: #FFF3B0;
+            --bela: #FFFFFF;
+            --siva-svetla: #F8F8F8;
+            --siva-rob: #EEEEEE;
+            --besedilo: #2D2D2D;
+        }
+
+        body {
+            background-color: var(--siva-svetla);
+            color: var(--besedilo);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* ── Navbar ── */
+        .navbar {
+            background: linear-gradient(135deg, var(--oranzna) 0%, #FF9A3C 100%);
+            box-shadow: 0 2px 8px rgba(255, 107, 26, 0.3);
+        }
+        .navbar-item, .navbar-link {
+            color: var(--bela) !important;
+            font-weight: 600;
+        }
+        .navbar-item:hover, .navbar-link:hover {
+            background-color: rgba(255,255,255,0.15) !important;
+            color: var(--rumena) !important;
+        }
+        .navbar-dropdown {
+            background-color: var(--bela);
+            border-top: 3px solid var(--oranzna);
+        }
+        .navbar-dropdown .navbar-item {
+            color: var(--besedilo) !important;
+        }
+        .navbar-dropdown .navbar-item:hover {
+            background-color: var(--rumena-svetla) !important;
+            color: var(--oranzna) !important;
+        }
+        .navbar-brand-text {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--bela);
+            letter-spacing: 1px;
+        }
+        .navbar-brand-text span {
+            color: var(--rumena);
+        }
+
+        /* ── Gumbi ── */
+        .button.is-primary {
+            background-color: var(--oranzna);
+            border-color: transparent;
+            color: var(--bela);
+            font-weight: 700;
+        }
+        .button.is-primary:hover {
+            background-color: var(--oranzna-temna);
+        }
+        .button.is-warning {
+            background-color: var(--rumena);
+            border-color: transparent;
+            color: var(--besedilo);
+            font-weight: 700;
+        }
+        .button.is-warning:hover {
+            background-color: #ECC200;
+        }
+        .button.is-light {
+            background-color: var(--bela);
+            border: 2px solid var(--oranzna);
+            color: var(--oranzna);
+            font-weight: 700;
+        }
+        .button.is-light:hover {
+            background-color: var(--rumena-svetla);
+        }
+
+        /* ── Kartica oglasa ── */
+        .oglas-kartica {
+            background: var(--bela);
+            border-radius: 10px;
+            border-left: 5px solid var(--oranzna);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .oglas-kartica:hover {
+            box-shadow: 0 6px 20px rgba(255,107,26,0.18);
+            transform: translateY(-2px);
+        }
+        .oglas-kartica.nakup {
+            border-left-color: var(--rumena);
+        }
+        .oglas-naslov {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--oranzna);
+        }
+        .oglas-naslov:hover {
+            color: var(--oranzna-temna);
+        }
+        .tip-badge {
+            display: inline-block;
+            padding: 0.2em 0.8em;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .tip-prodaja {
+            background: var(--oranzna);
+            color: var(--bela);
+        }
+        .tip-nakup {
+            background: var(--rumena);
+            color: var(--besedilo);
+        }
+        .cena-tag {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--oranzna-temna);
+        }
+
+        /* ── Obvestilo ── */
+        .notification.is-danger {
+            background-color: #FFF0E8;
+            border-left: 4px solid #FF3860;
+            color: #CC0F35;
+        }
+        .notification.is-success {
+            background-color: #EEFBF3;
+            border-left: 4px solid #23D160;
+            color: #257942;
+        }
+
+        /* ── Iskalna vrstica ── */
+        .search-bar {
+            background: var(--bela);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        }
+        .input:focus, .select select:focus, .textarea:focus {
+            border-color: var(--oranzna);
+            box-shadow: 0 0 0 2px rgba(255,107,26,0.18);
+        }
+
+        /* ── Naslovna sekcija ── */
+        .hero-bolha {
+            background: linear-gradient(135deg, var(--oranzna) 0%, var(--rumena) 100%);
+            border-radius: 14px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--bela);
+        }
+        .hero-bolha h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--bela);
+            text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .hero-bolha p {
+            color: rgba(255,255,255,0.92);
+            font-size: 1.05rem;
+        }
+
+        /* ── Obrazci ── */
+        .form-kartica {
+            background: var(--bela);
+            border-radius: 14px;
+            padding: 2rem 2.5rem;
+            box-shadow: 0 4px 20px rgba(255,107,26,0.10);
+            border-top: 4px solid var(--oranzna);
+        }
+        .label {
+            font-weight: 700;
+            color: var(--besedilo);
+        }
+
+        /* ── Footer ── */
+        footer {
+            background: var(--oranzna);
+            color: var(--bela);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            font-weight: 600;
+        }
+
+        /* ── Ujemanja ── */
+        .ujemanje-kartica {
+            background: var(--rumena-svetla);
+            border-radius: 8px;
+            border-left: 4px solid var(--rumena);
+            padding: 0.8rem 1.2rem;
+            margin-bottom: 0.6rem;
+        }
+
+        /* Obvestilo o sporocilu */
+        .bs-notification {
+            border-radius: 8px;
+            padding: 0.9rem 1.2rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .bs-notification.danger {
+            background: #FFF0E8;
+            border-left: 4px solid var(--oranzna);
+            color: #7a2600;
+        }
+        .bs-notification.success {
+            background: #EEFBF3;
+            border-left: 4px solid #23D160;
+            color: #257942;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.bs-close').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.parentNode.remove();
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand" style="padding-left:1.2rem;">
+        <a href="/" class="navbar-item navbar-brand-text">
+            <span style="background:#FF6B1A; color:white; border-radius:10px; padding:2px 10px; font-family:Georgia,serif; font-weight:700; margin-right:6px; font-size:1.3rem;">B<span style="color:#FFD600;">S</span></span>Bolha<span>Smart</span>
+        </a>
+    </div>
+    <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+            % if uporabnik:
+            <a href="/" class="navbar-item">
+                <i class="fas fa-home" style="margin-right:5px;"></i> Oglasi
+            </a>
+            <a href="/oglasi/dodaj/" class="navbar-item">
+                <i class="fas fa-plus-circle" style="margin-right:5px;"></i> Oddaj oglas
+            </a>
+            <a href="/moji-oglasi/" class="navbar-item">
+                <i class="fas fa-list" style="margin-right:5px;"></i> Moji oglasi
+            </a>
+            % end
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    % if uporabnik:
+                    <span class="navbar-item" style="color:white; font-weight:600;">
+                        <i class="fas fa-user" style="margin-right:5px;"></i> {{uporabnik}}
+                    </span>
+                    <form action="/odjava/" method="POST" style="margin:0;">
+                        <button class="button is-light">
+                            <i class="fas fa-sign-out-alt" style="margin-right:5px;"></i> Odjava
+                        </button>
+                    </form>
+                    % else:
+                    <a href="/registracija/" class="button is-warning">
+                        <strong><i class="fas fa-user-plus" style="margin-right:5px;"></i> Registracija</strong>
+                    </a>
+                    <a href="/prijava/" class="button is-light">
+                        <i class="fas fa-sign-in-alt" style="margin-right:5px;"></i> Prijava
+                    </a>
+                    % end
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+% if sporocilo:
+<div style="max-width:900px; margin:1rem auto 0; padding:0 1rem;">
+    % if sporocilo.startswith('✓'):
+    <div class="bs-notification success">
+        <i class="fas fa-check-circle"></i>
+        <span>{{sporocilo}}</span>
+        <button class="bs-close" style="margin-left:auto; background:none; border:none; cursor:pointer; font-size:1rem;">✕</button>
+    </div>
+    % else:
+    <div class="bs-notification danger">
+        <i class="fas fa-exclamation-circle"></i>
+        <span>{{sporocilo}}</span>
+        <button class="bs-close" style="margin-left:auto; background:none; border:none; cursor:pointer; font-size:1rem;">✕</button>
+    </div>
+    % end
+</div>
+% end
+
+<section class="section" style="padding-top:1.5rem;">
+    <div class="container">
+        {{!base}}
+    </div>
+</section>
+
+<footer>
+    <span style="background:#FF6B1A; color:white; border-radius:6px; padding:1px 7px; font-family:Georgia,serif; font-weight:700; margin-right:4px;">B<span style="color:#FFD600;">S</span></span> BolhaSmart &mdash; Najdi kar iščeš in prodaj kar ne rabiš.
+</footer>
+
+</body>
+</html>

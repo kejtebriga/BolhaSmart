@@ -1,0 +1,30 @@
+% rebase('osnova.html', naslov='Prijava')
+% obrazec = preberi_obrazec('prijava')
+
+<form action="/prijava/" method="POST">
+    <div class="field">
+        <label class="label">Email</label>
+        <p class="control has-icons-left">
+            <input class="input" type="email" name="email" placeholder="Email naslov" value="{{obrazec.get('email', '')}}" required />
+            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <label class="label">Geslo</label>
+        <p class="control has-icons-left">
+            <input class="input" type="password" name="geslo" placeholder="Geslo" required />
+            <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <p class="control">
+            <button class="button is-success">
+                Prijavi se
+            </button>
+        </p>
+    </div>
+</form>

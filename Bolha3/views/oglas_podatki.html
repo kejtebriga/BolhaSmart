@@ -1,0 +1,113 @@
+% rebase('osnova.html', naslov=oglas.naslov)
+
+<!-- Navigacija nazaj -->
+<div style="margin-bottom:1.2rem;">
+    <a href="/" style="color:var(--oranzna); font-weight:600;">
+        <i class="fas fa-arrow-left"></i>&nbsp; Nazaj na oglase
+    </a>
+</div>
+
+<!-- Glavni oglas -->
+<div class="columns">
+    <div class="column is-8">
+        <div class="form-kartica" style="border-top-color: {{'var(--oranzna)' if oglas.tip == 'prodaja' else 'var(--rumena)'}};">
+
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.5rem;">
+                <h1 class="title is-3" style="color:var(--oranzna); margin-bottom:0.3rem;">
+                    {{oglas.naslov}}
+                </h1>
+                <span class="tip-badge tip-{{oglas.tip}}" style="font-size:0.9rem; padding:0.3em 1em;">
+                    {{'📦 PRODAJA' if oglas.tip == 'prodaja' else '🛒 NAKUP'}}
+                </span>
+            </div>
+
+            <p style="color:#888; font-size:0.9rem; margin-bottom:1rem;">
+                <i class="fas fa-tag"></i>&nbsp; Kategorija: <strong>{{kategorija.naziv if kategorija else '—'}}</strong>
+            </p>
+
+            <hr style="border-color:var(--siva-rob);">
+
+            <div class="cena-tag" style="font-size:2rem; margin-bottom:1rem;">
+                % if oglas.cena:
+                💰 {{'{:.2f}'.format(oglas.cena)}} €
+                % else:
+                Po dogovoru
+                % end
+            </div>
+
+            % if oglas.opis:
+            <div style="background:var(--siva-svetla); border-radius:8px; padding:1rem; margin-bottom:1rem;">
+                <p style="font-weight:700; margin-bottom:0.4rem;">Opis:</p>
+                <p style="line-height:1.7;">{{oglas.opis}}</p>
+            </div>
+            % end
+
+            <!-- Gumbi za urejanje/brisanje -->
+            % if uporabnik and (oglas.uporabnik_id == uporabnik.id or uporabnik.admin):
+            <div style="display:flex; gap:0.7rem; margin-top:1.5rem; flex-wrap:wrap;">
+                <a href="/oglasi/uredi/{{oglas.id}}/" class="button is-warning">
+                    <i class="fas fa-edit"></i>&nbsp; Uredi oglas
+                </a>
+                <form action="/oglasi/izbrisi/{{oglas.id}}/" method="POST">
+                    <button class="button is-danger"
+                            onclick="return confirm('Res želiš izbrisati ta oglas?')">
+                        <i class="fas fa-trash"></i>&nbsp; Izbriši oglas
+                    </button>
+                </form>
+            </div>
+            % end
+        </div>
+    </div>
+
+    <!-- Kontaktni podatki -->
+    <div class="column is-4">
+        <div class="form-kartica" style="border-top-color: var(--rumena);">
+            <h3 class="title is-5" style="color:var(--oranzna);">
+                <i class="fas fa-address-card"></i>&nbsp; Oglaševalec
+            </h3>
+            % if lastnik:
+            <p><strong><i class="fas fa-user"></i>&nbsp; {{lastnik}}</strong></p>
+            <p style="margin-top:0.5rem;">
+                <a href="mailto:{{lastnik.email}}" style="color:var(--oranzna);">
+                    <i class="fas fa-envelope"></i>&nbsp; {{lastnik.email}}
+                </a>
+            </p>
+            % else:
+            <p style="color:#999;">Podatki niso na voljo.</p>
+            % end
+        </div>
+    </div>
+</div>
+
+<!-- Ujemanja -->
+% if ujemanja:
+<div style="margin-top:2rem;">
+    <h3 class="title is-5" style="color:var(--oranzna);">
+        <i class="fas fa-handshake"></i>&nbsp; Mogoča ujemanja ({{len(ujemanja)}})
+    </h3>
+    <p style="color:#888; margin-bottom:1rem; font-size:0.92rem;">
+        Oglasi z nasprotnim tipom v isti kategoriji — morda jih zanima tvoj oglas!
+    </p>
+    % for u in ujemanja:
+    <div class="ujemanje-kartica">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+            <div>
+                <a href="/oglasi/podatki/{{u.id}}/" style="font-weight:700; color:var(--oranzna);">
+                    {{u.naslov}}
+                </a>
+                <span class="tip-badge tip-{{u.tip}}" style="margin-left:0.5rem; font-size:0.72rem;">
+                    {{u.tip.upper()}}
+                </span>
+            </div>
+            <span style="font-weight:700; color:var(--oranzna-temna);">
+                % if u.cena:
+                {{'{:.2f}'.format(u.cena)}} €
+                % else:
+                Po dogovoru
+                % end
+            </span>
+        </div>
+    </div>
+    % end
+</div>
+% end

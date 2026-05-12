@@ -1,0 +1,25 @@
+naslov,opis,cena,tip,uporabnik_id,kategorija_id
+iPhone 13,Prodam odlično ohranjen telefon.,550.0,prodaja,1,1
+iPhone 13,Kupim iPhone 13 ugodno.,500.0,nakup,2,1
+Prenosnik HP,Prodam HP Laptop 16GB RAM.,700.0,prodaja,3,1
+Tablica iPad,Prodam iPad Air 2022.,450.0,prodaja,4,1
+Kavč trosed,Prodam moder kavč.,250.0,prodaja,5,2
+Kavč trosed,Kupim ohranjen kavč.,200.0,nakup,6,2
+Kuhinjska miza,Prodam leseno mizo.,150.0,prodaja,7,2
+Omara za oblačila,Prodam belo omaro Ikea.,80.0,prodaja,8,2
+Preproga 2x3m,Prodam volneno preprogo.,100.0,prodaja,9,2
+Gorsko kolo,Prodam kolo Scott velikost L.,350.0,prodaja,10,3
+Gorsko kolo,Kupim gorsko kolo za moške.,300.0,nakup,11,3
+Smuči Elan,Prodam smuči 170cm.,200.0,prodaja,12,3
+Smuči Elan,Kupim Elan smuči.,180.0,nakup,13,3
+Teniški lopar,Prodam lopar Wilson.,80.0,prodaja,14,3
+Superge Nike,Prodam nove superge 43.,80.0,prodaja,15,4
+Superge Nike,Iščem Nike Air Max.,70.0,nakup,16,4
+Jakna zimska,Prodam bundo št M.,60.0,prodaja,17,4
+Usnjen pas,Prodam črn usnjen pas.,20.0,prodaja,18,4
+Ročna ura,Prodam Casio uro.,40.0,prodaja,19,4
+Zimske gume,Prodam 4 zimske gume Sava.,120.0,prodaja,20,5
+Zimske gume,Kupim rabljene zimske gume.,100.0,nakup,21,5
+Strešni kovček,Prodam kovček za avto.,150.0,prodaja,22,5
+Nosilec za kolesa,Kupim nosilec za kljuko.,80.0,nakup,23,5
+Motoristična čelada,Prodam čelado Nolan.,100.0,prodaja,24,5

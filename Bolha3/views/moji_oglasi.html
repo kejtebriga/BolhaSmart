@@ -1,0 +1,71 @@
+% rebase('osnova.html', naslov='Moji oglasi')
+
+<div class="hero-bolha" style="background: linear-gradient(135deg, #FF8C42 0%, var(--rumena) 100%);">
+    <h1>📋 Moji oglasi</h1>
+    <p>Pregled vseh tvojih objav.</p>
+</div>
+
+<div style="display:flex; justify-content:flex-end; margin-bottom:1rem;">
+    <a href="/oglasi/dodaj/" class="button is-primary">
+        <i class="fas fa-plus-circle"></i>&nbsp; Dodaj nov oglas
+    </a>
+</div>
+
+% if oglasi:
+<p style="margin-bottom:1rem; color:#888;">Imaš <strong>{{len(oglasi)}}</strong> oglasov.</p>
+% for o in oglasi:
+<div class="oglas-kartica {{o.tip}}">
+    <div class="columns is-vcentered">
+        <div class="column">
+            <a href="/oglasi/podatki/{{o.id}}/" class="oglas-naslov">{{o.naslov}}</a>
+            <div style="margin-top:0.3rem;">
+                <span class="tip-badge tip-{{o.tip}}">
+                    {{'📦 Prodaja' if o.tip == 'prodaja' else '🛒 Nakup'}}
+                </span>
+                % if o.kategorija_id in kategorije:
+                <span style="margin-left:0.5rem; color:#888; font-size:0.88rem;">
+                    <i class="fas fa-folder"></i>&nbsp; {{kategorije[o.kategorija_id].naziv}}
+                </span>
+                % end
+            </div>
+            % if o.opis:
+            <p style="margin-top:0.4rem; color:#666; font-size:0.92rem;">
+                {{o.opis[:100] + '...' if len(o.opis) > 100 else o.opis}}
+            </p>
+            % end
+        </div>
+        <div class="column is-narrow" style="text-align:right;">
+            <div class="cena-tag">
+                % if o.cena:
+                {{'{:.2f}'.format(o.cena)}} €
+                % else:
+                Po dogovoru
+                % end
+            </div>
+            <div style="margin-top:0.6rem; display:flex; gap:0.4rem; justify-content:flex-end;">
+                <a href="/oglasi/podatki/{{o.id}}/" class="button is-small is-primary">
+                    <i class="fas fa-eye"></i>
+                </a>
+                <a href="/oglasi/uredi/{{o.id}}/" class="button is-small is-warning">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <form action="/oglasi/izbrisi/{{o.id}}/" method="POST" style="display:inline;">
+                    <button class="button is-small is-danger"
+                            onclick="return confirm('Res želiš izbrisati oglas \'{{o.naslov}}\'?')">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+% end
+% else:
+<div style="text-align:center; padding:3rem; background:white; border-radius:12px;">
+    <p style="font-size:3rem;">🗒️</p>
+    <p style="font-size:1.2rem; color:#999;">Še nimaš oglasov.</p>
+    <a href="/oglasi/dodaj/" class="button is-primary" style="margin-top:1rem;">
+        <i class="fas fa-plus-circle"></i>&nbsp; Objavi prvi oglas
+    </a>
+</div>
+% end
