@@ -4,6 +4,8 @@ from functools import wraps
 from model import Uporabnik, Oglas, Kategorija
 
 
+
+
 SKRIVNOST = 'moja_skrivnost_za_piskotke_2024'
 
 
