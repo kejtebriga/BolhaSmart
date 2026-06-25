@@ -16,14 +16,19 @@ def oddaj_oglas_z_matchmakingom():
     print("\n--- ODDAJA NOVEGA OGLASA ---")
     
     print("\n--- REGISTRIRAJ SE:")
-    ime = input("Ime:")
-    priimek = input("Priimek:")
-    email = input("Email:")
+    ime = input("Ime: ")
+    priimek = input("Priimek: ")
+    email = input("Email: ")
 
     nov_uporabnik = Uporabnik.poisci_po_email(email)
     if not nov_uporabnik:
+        geslo = input("Geslo: ")
         nov_uporabnik = Uporabnik(None, ime, priimek, email)
-        nov_uporabnik.vstavi_uporabnika()
+        try:
+            nov_uporabnik.registriraj(geslo)
+        except ValueError as e:
+            print(f"Napaka: {e}")
+            return
 
 
 
