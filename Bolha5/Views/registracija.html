@@ -1,0 +1,57 @@
+% rebase('osnova.html', naslov='Registracija')
+% obrazec = preberi_obrazec('registracija')
+
+<form action="/registracija/" method="POST">
+    <div class="field">
+        <label class="label">Ime</label>
+        <p class="control has-icons-left">
+            <input class="input" type="text" name="ime" placeholder="Ime" value="{{obrazec.get('ime', '')}}" required />
+            <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <label class="label">Priimek</label>
+        <p class="control has-icons-left">
+            <input class="input" type="text" name="priimek" placeholder="Priimek" value="{{obrazec.get('priimek', '')}}" required />
+            <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <label class="label">Email</label>
+        <p class="control has-icons-left">
+            <input class="input" type="email" name="email" placeholder="Email naslov" value="{{obrazec.get('email', '')}}" required />
+            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <label class="label">Geslo</label>
+        <p class="control has-icons-left">
+            <input class="input" type="password" name="geslo" placeholder="Geslo" required />
+            <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <label class="label">Ponovi geslo</label>
+        <p class="control has-icons-left">
+            <input class="input" type="password" name="geslo2" placeholder="Ponovi geslo" required />
+            <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <p class="control">
+            <button class="button is-success">
+                Registriraj se
+            </button>
+        </p>
+    </div>
+</form>

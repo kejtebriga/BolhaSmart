@@ -1,0 +1,136 @@
+% rebase('osnova.html', naslov='Oglasi')
+
+<div class="hero-bolha">
+    <h1>Oglasi</h1>
+    <p>Išči, prodaj, kupi — in najdi svoje ujemanje.</p>
+</div>
+
+<!-- Iskanje in filtri -->
+<div class="search-bar">
+    <form method="GET" action="/">
+        <div class="columns is-vcentered">
+            <div class="column is-4">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" name="iskanje"
+                               placeholder="Išči po naslovu ali opisu..."
+                               value="{{iskanje or ''}}">
+                    </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="field">
+                    <div class="control">
+                        <div class="select is-fullwidth">
+                            <select name="kategorija_id">
+                                <option value="">Vse kategorije</option>
+                                % for k in kategorije:
+                                <option value="{{k.id}}"
+                                    {{'selected' if str(k.id) == str(kategorija_id) else ''}}>
+                                    {{k.naziv}}
+                                </option>
+                                % end
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-2">
+                <div class="field">
+                    <div class="control">
+                        <div class="select is-fullwidth">
+                            <select name="tip">
+                                <option value="">Vsi tipi</option>
+                                <option value="prodaja" {{'selected' if tip == 'prodaja' else ''}}>Prodaja</option>
+                                <option value="nakup" {{'selected' if tip == 'nakup' else ''}}>Nakup</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-auto">
+                <button class="button is-primary" type="submit">Filtriraj</button>
+                <a href="/" class="button is-light" style="margin-left:0.5rem;">Ponastavi</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Gumb za dodajanje -->
+<div style="display:flex; justify-content:flex-end; margin-bottom:1rem;">
+    <a href="/oglasi/dodaj/" class="button is-primary">Oddaj oglas</a>
+</div>
+
+<!-- Seznam oglasov -->
+% if oglasi:
+<p style="margin-bottom:1rem; color:#888;">
+    Stran <strong>{{stran}}</strong> od <strong>{{stevilo_strani}}</strong>
+</p>
+% for o in oglasi:
+<div class="oglas-kartica {{o.tip}}">
+    <div class="columns is-vcentered">
+        <div class="column">
+            <a href="/oglasi/podatki/{{o.id}}/" class="oglas-naslov">{{o.naslov}}</a>
+            <div style="margin-top:0.3rem;">
+                <span class="tip-badge tip-{{o.tip}}">
+                    {{'Prodaja' if o.tip == 'prodaja' else 'Nakup'}}
+                </span>
+            </div>
+            % if o.opis:
+            <p style="margin-top:0.5rem; color:#666; font-size:0.92rem;">
+                {{o.opis[:120] + '...' if len(o.opis) > 120 else o.opis}}
+            </p>
+            % end
+        </div>
+        <div class="column is-narrow" style="text-align:right;">
+            <div class="cena-tag">
+                % if o.cena:
+                {{'{:.2f}'.format(o.cena)}} €
+                % else:
+                Po dogovoru
+                % end
+            </div>
+            <div style="margin-top:0.5rem;">
+                <a href="/oglasi/podatki/{{o.id}}/" class="button is-small is-primary">Poglej</a>
+                % if uporabnik and (o.uporabnik_id == uporabnik.id or uporabnik.admin):
+                <a href="/oglasi/uredi/{{o.id}}/" class="button is-small is-warning" style="margin-left:4px;">Uredi</a>
+                <form action="/oglasi/izbrisi/{{o.id}}/" method="POST" style="display:inline;">
+                    <button class="button is-small is-danger"
+                            onclick="return confirm('Res želiš izbrisati oglas \'{{o.naslov}}\'?')"
+                            style="margin-left:4px;">Izbriši</button>
+                </form>
+                % end
+            </div>
+        </div>
+    </div>
+</div>
+% end
+
+<!-- Paginacija -->
+% if stevilo_strani > 1:
+<div style="display:flex; flex-wrap:wrap; gap:0.4rem; justify-content:center; margin-top:2rem;">
+    % for s in range(1, stevilo_strani + 1):
+    % params = f"?stran={s}"
+    % if iskanje:
+    %     params += f"&iskanje={iskanje}"
+    % end
+    % if kategorija_id:
+    %     params += f"&kategorija_id={kategorija_id}"
+    % end
+    % if tip:
+    %     params += f"&tip={tip}"
+    % end
+    <a href="/{{params}}"
+       class="button is-small {{'is-primary' if s == stran else 'is-light'}}">
+        {{s}}
+    </a>
+    % end
+</div>
+% end
+
+% else:
+<div style="text-align:center; padding:3rem; background:white; border-radius:12px;">
+    <p style="font-size:1.2rem; color:#999;">Ni oglasov. Bodi prvi!</p>
+    <a href="/oglasi/dodaj/" class="button is-primary" style="margin-top:1rem;">Oddaj oglas</a>
+</div>
+% end

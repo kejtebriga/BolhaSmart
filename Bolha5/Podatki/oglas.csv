@@ -1,0 +1,501 @@
+naslov,opis,cena,tip,uporabnik_id,kategorija_id
+Motor,"Brez poškodb, deluje perfektno.",900.04,prodaja,352,3
+Smuči,"V dobrem stanju, brez napak.",768.32,prodaja,1974,4
+Quad,"Brez poškodb, deluje perfektno.",430.44,prodaja,1810,3
+Smuči,Iščem za darilo.,1056.92,nakup,1056,4
+Vinilne plošče,Iščem ugodne ponudbe.,1155.48,nakup,783,8
+Pomivalni stroj,"Original embalaža, polna oprema.",1414.44,prodaja,811,5
+Biografija,"Ugodna cena, možen dogovor.",142.48,prodaja,999,6
+Hlače,Kontaktirajte me po emailu.,1286.1,nakup,43,2
+Brusilnik,"Znižana cena, hitro!",1047.48,prodaja,366,9
+Flavta,"Original embalaža, polna oprema.",1868.25,prodaja,143,8
+Roman,Iščem ugodne ponudbe.,,nakup,111,6
+Krožna žaga,Sprejemam tudi malo rabljenega.,347.97,nakup,18,9
+Brusilnik,"Original embalaža, polna oprema.",760.14,prodaja,1563,9
+Ura,"V dobrem stanju, brez napak.",1736.61,prodaja,1643,2
+Telefon,"Odlično ohranjeno, malo uporabljeno.",,prodaja,192,1
+Družabna igra,"Znižana cena, hitro!",1553.09,prodaja,1298,7
+Plišasta igrača,"Ugodna cena, možen dogovor.",1126.63,prodaja,1055,7
+Quad,"Malo vidne obrabe, sicer ok.",1167.88,prodaja,347,3
+Kapa in rokavice,"Original embalaža, polna oprema.",,prodaja,237,2
+Kolesarska čelada,Zelo dobro ohranjeno.,1680.45,prodaja,254,4
+Monitor,Iščem v dobrem stanju.,285.0,nakup,1829,1
+Enciklopedija,"Brez poškodb, deluje perfektno.",1160.17,prodaja,753,6
+Kavbojke,"Brez poškodb, deluje perfektno.",425.07,prodaja,230,2
+Mešalnik za beton,Potrebujem čim prej.,1409.04,nakup,1577,9
+Učbenik,Zelo dobro ohranjeno.,1467.03,prodaja,1389,6
+Krožna žaga,"Kupljeno lani, skoraj novo.",802.67,prodaja,510,9
+Motor,"Original embalaža, polna oprema.",881.84,prodaja,1498,3
+Lestev,"Original embalaža, polna oprema.",276.65,prodaja,1509,9
+Saksofon,"Ugodna cena, možen dogovor.",1220.86,prodaja,742,8
+Saksofon,"Rabljeno, deluje brezhibno.",1285.83,prodaja,561,8
+Omara,"Kupljeno lani, skoraj novo.",,prodaja,1707,5
+Računalnik,Kontaktirajte me po emailu.,1221.12,nakup,1433,1
+Slušalke,Zelo dobro ohranjeno.,1155.38,prodaja,1206,1
+Kavč,Sprejemam tudi brez embalaže.,,nakup,1552,5
+Zvočnik,"Rabljeno, deluje brezhibno.",893.84,prodaja,1814,1
+Kolesarska čelada,Potrebujem čim prej.,,nakup,209,4
+Sončna očala,"Kupljeno lani, skoraj novo.",,prodaja,203,2
+Zunanja igrača,Prodam zaradi menjave.,1220.16,prodaja,1764,7
+Učbenik,"Original embalaža, polna oprema.",1120.68,prodaja,297,6
+Športni copati,Prodam ker ne potrebujem več.,1062.3,prodaja,1727,2
+Jedilna miza,Prodam ker ne potrebujem več.,,prodaja,479,5
+Stripovski album,"Kupljeno lani, skoraj novo.",44.93,prodaja,288,6
+Gorsko kolo,Prodam zaradi menjave.,1398.55,prodaja,121,4
+Tepih,Primerno za vsakdanjo uporabo.,,nakup,1641,5
+Žoga,Primerno za vsakdanjo uporabo.,503.65,nakup,1668,4
+Škarje za živo mejo,"Znižana cena, hitro!",1680.22,prodaja,1671,9
+Pulover,Kontaktirajte me po emailu.,668.79,nakup,1564,2
+Učbenik,"V dobrem stanju, brez napak.",208.4,prodaja,1427,6
+Zvočna oprema,Iščem v dobrem stanju.,1235.53,nakup,694,8
+Grablje,"Rabljeno, deluje brezhibno.",1545.9,prodaja,79,9
+Mešalnik za beton,"Kupljeno lani, skoraj novo.",1457.95,prodaja,1852,9
+Omara,Sprejemam tudi malo rabljenega.,,nakup,1533,5
+Tablica,Iščem za darilo.,1172.67,nakup,342,1
+Smučke,Zelo dobro ohranjeno.,1511.69,prodaja,1286,4
+Vlakec,"Malo vidne obrabe, sicer ok.",416.51,prodaja,1575,7
+Brusilnik,"Rabljeno, deluje brezhibno.",1297.8,prodaja,1862,9
+Motor,"Kupljeno lani, skoraj novo.",1382.78,prodaja,1990,3
+Traktor,Prodam ker ne potrebujem več.,1432.11,prodaja,532,3
+Varilni aparat,"Znižana cena, hitro!",1071.92,prodaja,1554,9
+Traktor,Sprejemam tudi brez embalaže.,1010.05,nakup,112,3
+Smučke,Sprejemam tudi brez embalaže.,1477.67,nakup,1203,4
+Vrtalnik,"Malo vidne obrabe, sicer ok.",1445.12,prodaja,1498,9
+Tekaški copati,Zelo dobro ohranjeno.,,prodaja,266,4
+Sesalec,Zelo dobro ohranjeno.,460.23,prodaja,1788,5
+Roman,"Kupljeno lani, skoraj novo.",1705.26,prodaja,1033,6
+Škarje za živo mejo,Iščem ugodne ponudbe.,1093.48,nakup,498,9
+Motor,Sprejemam tudi brez embalaže.,951.36,nakup,1269,3
+Grablje,Iščem ugodne ponudbe.,890.39,nakup,1031,9
+Harmonika,"Malo vidne obrabe, sicer ok.",376.96,prodaja,632,8
+Sončna očala,"Kupljeno lani, skoraj novo.",,prodaja,826,2
+Violina,Prosim kontaktirajte z emailom.,553.69,nakup,94,8
+Tekaški copati,Prodam zaradi menjave.,1126.53,prodaja,1855,4
+Zimski škornji,"Kupljeno lani, skoraj novo.",1230.25,prodaja,1334,2
+Kombi,Prodam ker ne potrebujem več.,1144.22,prodaja,527,3
+Brivnik,"Original embalaža, polna oprema.",1225.46,prodaja,432,1
+Flavta,"Odlično ohranjeno, malo uporabljeno.",,prodaja,1382,8
+Skuterček,Zanimajo me različne ponudbe.,,nakup,765,3
+Mešalnik za beton,Prodam zaradi menjave.,643.05,prodaja,10,9
+Skuterček,"Malo vidne obrabe, sicer ok.",287.56,prodaja,1693,3
+Enciklopedija,"Original embalaža, polna oprema.",544.33,prodaja,1667,6
+Zvočna oprema,"Znižana cena, hitro!",1528.87,prodaja,271,8
+Klaviature,Sprejemam tudi malo rabljenega.,1319.51,nakup,683,8
+Vinilne plošče,Sprejemam tudi malo rabljenega.,,nakup,136,8
+Klimatska naprava,"V dobrem stanju, brez napak.",22.24,prodaja,1526,1
+Kombi,Iščem za darilo.,198.25,nakup,1659,3
+Torba,"Kupljeno lani, skoraj novo.",860.35,prodaja,1380,2
+Pomivalni stroj,Kontaktirajte me po emailu.,500.18,nakup,1760,5
+Slušalke,Zelo dobro ohranjeno.,1130.72,prodaja,1169,1
+Učbenik,Sprejemam tudi malo rabljenega.,341.27,nakup,1215,6
+Mešalnik za beton,Potrebujem čim prej.,670.63,nakup,306,9
+Zimski škornji,Iščem v dobrem stanju.,,nakup,1554,2
+Prenosnik,"Ugodna cena, možen dogovor.",1465.59,prodaja,1156,1
+Vrtna garnitura,Zanimajo me različne ponudbe.,844.81,nakup,1981,5
+Jedilna miza,Prodam ker ne potrebujem več.,329.98,prodaja,306,5
+Torba,"Brez poškodb, deluje perfektno.",1536.33,prodaja,1163,2
+Vrtalnik,"Malo vidne obrabe, sicer ok.",608.96,prodaja,552,9
+Slovar,Potrebujem čim prej.,1120.7,nakup,1760,6
+Mešalnik za beton,"Malo vidne obrabe, sicer ok.",76.47,prodaja,604,9
+Zunanja igrača,"Brez poškodb, deluje perfektno.",282.81,prodaja,1505,7
+Tekaški copati,"Kupljeno lani, skoraj novo.",1835.25,prodaja,722,4
+Kavč,Zelo dobro ohranjeno.,614.42,prodaja,1191,5
+Rolerji,Zanimajo me različne ponudbe.,345.39,nakup,1948,4
+Potopisna knjiga,Iščem ugodne ponudbe.,133.28,nakup,195,6
+Kamp prikolica,Prodam zaradi menjave.,1925.16,prodaja,1471,3
+Roman,Sprejemam tudi malo rabljenega.,120.16,nakup,301,6
+Skuter,Zelo dobro ohranjeno.,1064.17,prodaja,377,3
+Obleka,"Znižana cena, hitro!",1737.33,prodaja,205,2
+Škarje za živo mejo,"Original embalaža, polna oprema.",1718.82,prodaja,1169,9
+Otroška knjiga,"Original embalaža, polna oprema.",1918.3,prodaja,1273,6
+Brivnik,Potrebujem čim prej.,788.92,nakup,1006,1
+Slovar,Iščem ugodne ponudbe.,,nakup,1384,6
+Škarje za živo mejo,"Original embalaža, polna oprema.",1200.8,prodaja,1412,9
+Stojalo za noto,"Brez poškodb, deluje perfektno.",1764.35,prodaja,807,8
+Žoga,Zanimajo me različne ponudbe.,746.96,nakup,247,4
+Puzzle,"Ugodna cena, možen dogovor.",1129.88,prodaja,655,7
+Vlakec,"Original embalaža, polna oprema.",1969.64,prodaja,912,7
+Škarje za živo mejo,Zanimajo me različne ponudbe.,,nakup,393,9
+Svetilka,Prodam zaradi menjave.,1190.15,prodaja,576,5
+Harmonika,"Malo vidne obrabe, sicer ok.",781.31,prodaja,460,8
+Pralni stroj,"Malo vidne obrabe, sicer ok.",97.87,prodaja,404,5
+Majica,"Kupljeno lani, skoraj novo.",1594.35,prodaja,1250,2
+Plišasta igrača,Prosim kontaktirajte z emailom.,1104.34,nakup,512,7
+Kamp prikolica,"Kupljeno lani, skoraj novo.",467.64,prodaja,1050,3
+Traktor,"Malo vidne obrabe, sicer ok.",971.84,prodaja,416,3
+Vrtalnik,"Original embalaža, polna oprema.",,prodaja,1254,9
+Slovar,"Kupljeno lani, skoraj novo.",1817.11,prodaja,300,6
+Zvočna oprema,Prodam zaradi menjave.,20.47,prodaja,1081,8
+Zavese,Kontaktirajte me po emailu.,1397.95,nakup,806,5
+Stojalo za noto,"Ugodna cena, možen dogovor.",,prodaja,1065,8
+Cestno kolo,"Znižana cena, hitro!",261.18,prodaja,1538,4
+Tiskalnik,Prodam ker ne potrebujem več.,790.72,prodaja,944,1
+Bobni,"Brez poškodb, deluje perfektno.",281.15,prodaja,1705,8
+Cvetlični lonci,Potrebujem čim prej.,368.96,nakup,1065,5
+Bobni,Zanimajo me različne ponudbe.,623.32,nakup,1686,8
+Grablje,"Brez poškodb, deluje perfektno.",1567.84,prodaja,1172,9
+Krilo,Sprejemam tudi malo rabljenega.,225.35,nakup,1531,2
+Kavč,"Kupljeno lani, skoraj novo.",1491.44,prodaja,163,5
+Pralni stroj,Zanimajo me različne ponudbe.,,nakup,405,5
+Televizor,"Original embalaža, polna oprema.",1306.52,prodaja,719,1
+Veslač,Sprejemam tudi malo rabljenega.,16.26,nakup,6,4
+Mikrofon,"Brez poškodb, deluje perfektno.",787.32,prodaja,793,8
+Zunanja igrača,Prodam zaradi menjave.,49.98,prodaja,852,7
+Avtomobilčki,"Original embalaža, polna oprema.",879.83,prodaja,175,7
+Kompresor,"Ugodna cena, možen dogovor.",1633.48,prodaja,951,9
+Powerbank,Zelo dobro ohranjeno.,1603.85,prodaja,1486,1
+Pisarniški stol,"V dobrem stanju, brez napak.",1984.13,prodaja,539,5
+Skuter,Prodam zaradi menjave.,517.09,prodaja,385,3
+Powerbank,Zelo dobro ohranjeno.,155.59,prodaja,374,1
+Električno kolo,Primerno za vsakdanjo uporabo.,,nakup,979,3
+Traktor,"Rabljeno, deluje brezhibno.",715.01,prodaja,202,3
+Kolesarska čelada,"V dobrem stanju, brez napak.",1625.82,prodaja,35,4
+Zunanja igrača,"V dobrem stanju, brez napak.",1986.08,prodaja,1518,7
+Hlače,"Original embalaža, polna oprema.",833.57,prodaja,1854,2
+Hlače,Prosim kontaktirajte z emailom.,585.14,nakup,1214,2
+Saksofon,"Rabljeno, deluje brezhibno.",1465.92,prodaja,1427,8
+Gorsko kolo,"Original embalaža, polna oprema.",,prodaja,916,4
+Kapa in rokavice,"Ugodna cena, možen dogovor.",,prodaja,501,2
+Vinilne plošče,"V dobrem stanju, brez napak.",1734.2,prodaja,47,8
+Plišasta igrača,Prodam ker ne potrebujem več.,1566.53,prodaja,695,7
+Brusilnik,"Odlično ohranjeno, malo uporabljeno.",1361.5,prodaja,718,9
+Skejtbord,"Znižana cena, hitro!",1076.93,prodaja,175,4
+Zunanja igrača,Iščem v dobrem stanju.,,nakup,317,7
+Harmonika,"Znižana cena, hitro!",1415.6,prodaja,313,8
+Kamp prikolica,"Rabljeno, deluje brezhibno.",211.21,prodaja,1042,3
+Škarje za živo mejo,"Znižana cena, hitro!",54.63,prodaja,1436,9
+Biografija,Zelo dobro ohranjeno.,393.54,prodaja,250,6
+Skuterček,"Ugodna cena, možen dogovor.",1337.41,prodaja,910,3
+Spletna kamera,"Odlično ohranjeno, malo uporabljeno.",1917.31,prodaja,890,1
+Računalnik,"Kupljeno lani, skoraj novo.",1260.9,prodaja,1193,1
+Enciklopedija,Zelo dobro ohranjeno.,322.34,prodaja,537,6
+Bunda,Zanimajo me različne ponudbe.,773.78,nakup,428,2
+Kombi,"V dobrem stanju, brez napak.",79.04,prodaja,57,3
+Športni copati,Sprejemam tudi malo rabljenega.,885.13,nakup,1678,2
+Zamrzovalnik,"V dobrem stanju, brez napak.",1617.34,prodaja,675,5
+Lego kocke,"Kupljeno lani, skoraj novo.",851.88,prodaja,1334,7
+Barbika,Zanimajo me različne ponudbe.,166.25,nakup,1035,7
+Pametna ura,"Malo vidne obrabe, sicer ok.",443.19,prodaja,1235,1
+Športni copati,Zelo dobro ohranjeno.,1490.75,prodaja,1244,2
+Lopata,Prodam ker ne potrebujem več.,,prodaja,1396,9
+Saksofon,Prodam ker ne potrebujem več.,1657.11,prodaja,800,8
+Stojalo za noto,"Original embalaža, polna oprema.",964.63,prodaja,1162,8
+Kavbojke,Potrebujem čim prej.,525.96,nakup,1375,2
+Konstruktorji,Sprejemam tudi brez embalaže.,1010.24,nakup,88,7
+Tepih,"Ugodna cena, možen dogovor.",199.91,prodaja,674,5
+Bobni,"Kupljeno lani, skoraj novo.",1333.69,prodaja,830,8
+Slušalke,Prodam zaradi menjave.,1176.68,prodaja,1953,1
+Harmonika,Prodam ker ne potrebujem več.,938.39,prodaja,1042,8
+Kombi,Potrebujem čim prej.,354.31,nakup,840,3
+Škarje za živo mejo,"Rabljeno, deluje brezhibno.",632.02,prodaja,1388,9
+Kuharica,"Brez poškodb, deluje perfektno.",1783.84,prodaja,1915,6
+Atlas,"Ugodna cena, možen dogovor.",,prodaja,412,6
+Televizor,Sprejemam tudi malo rabljenega.,,nakup,102,1
+Bobni,Iščem za darilo.,181.33,nakup,673,8
+Mešalnik za beton,Sprejemam tudi malo rabljenega.,,nakup,573,9
+Varilni aparat,"Brez poškodb, deluje perfektno.",224.21,prodaja,983,9
+Lestev,Prodam ker ne potrebujem več.,503.96,prodaja,1438,9
+Zimski škornji,Sprejemam tudi malo rabljenega.,181.49,nakup,1195,2
+Priklopnik,"Rabljeno, deluje brezhibno.",558.35,prodaja,316,3
+Lego kocke,Zanimajo me različne ponudbe.,835.91,nakup,1527,7
+Planinski nahrbtnik,Sprejemam tudi malo rabljenega.,,nakup,585,4
+Zvočnik,Primerno za vsakdanjo uporabo.,37.86,nakup,349,1
+Atlas,"Ugodna cena, možen dogovor.",1315.96,prodaja,585,6
+Kuharica,Prodam ker ne potrebujem več.,7.27,prodaja,1803,6
+Zunanja igrača,Zanimajo me različne ponudbe.,1340.01,nakup,1069,7
+Enciklopedija,Iščem za darilo.,122.76,nakup,831,6
+Saksofon,"Ugodna cena, možen dogovor.",778.48,prodaja,375,8
+Kuharica,Zelo dobro ohranjeno.,1600.36,prodaja,1026,6
+Flavta,"Ugodna cena, možen dogovor.",92.08,prodaja,637,8
+Atlas,"Rabljeno, deluje brezhibno.",804.64,prodaja,1052,6
+Saksofon,Zanimajo me različne ponudbe.,13.42,nakup,287,8
+Polnilec,"V dobrem stanju, brez napak.",1418.51,prodaja,1555,1
+Lego kocke,"Znižana cena, hitro!",,prodaja,559,7
+Konstruktorji,Sprejemam tudi brez embalaže.,,nakup,1803,7
+Škarje za živo mejo,Iščem za darilo.,277.14,nakup,1084,9
+Učbenik,"Odlično ohranjeno, malo uporabljeno.",412.11,prodaja,1118,6
+Quad,"Ugodna cena, možen dogovor.",1863.64,prodaja,961,3
+Traktor,Zanimajo me različne ponudbe.,559.99,nakup,1052,3
+Otroška knjiga,"Rabljeno, deluje brezhibno.",1217.29,prodaja,118,6
+Zamrzovalnik,"Ugodna cena, možen dogovor.",335.24,prodaja,1846,5
+Veslač,Iščem ugodne ponudbe.,,nakup,289,4
+Vrtalnik,Sprejemam tudi brez embalaže.,,nakup,1368,9
+Obleka,"Znižana cena, hitro!",,prodaja,1998,2
+Lego kocke,Iščem za darilo.,747.45,nakup,1284,7
+Tiskalnik,"Odlično ohranjeno, malo uporabljeno.",794.65,prodaja,192,1
+Fitnes naprava,Prodam zaradi menjave.,1944.62,prodaja,1401,4
+Zamrzovalnik,Sprejemam tudi malo rabljenega.,594.12,nakup,1542,5
+Šal,Primerno za vsakdanjo uporabo.,459.16,nakup,75,2
+Fitnes naprava,Prosim kontaktirajte z emailom.,1108.85,nakup,693,4
+Kompresor,Prodam ker ne potrebujem več.,,prodaja,1303,9
+Smučke,"Odlično ohranjeno, malo uporabljeno.",645.23,prodaja,513,4
+Mešalnik za beton,Iščem ugodne ponudbe.,1331.64,nakup,1740,9
+Bas kitara,"Rabljeno, deluje brezhibno.",1227.06,prodaja,1901,8
+Stripovski album,"V dobrem stanju, brez napak.",1785.48,prodaja,287,6
+Športni copati,Prodam zaradi menjave.,1995.74,prodaja,1403,2
+Skuterček,"Znižana cena, hitro!",519.39,prodaja,1563,3
+Zavese,"Ugodna cena, možen dogovor.",1542.7,prodaja,847,5
+Motor,"Kupljeno lani, skoraj novo.",656.68,prodaja,1405,3
+Lestev,"V dobrem stanju, brez napak.",1209.34,prodaja,864,9
+Lego kocke,"V dobrem stanju, brez napak.",,prodaja,342,7
+Mešalnik za beton,Kontaktirajte me po emailu.,563.18,nakup,617,9
+Televizor,"Original embalaža, polna oprema.",84.72,prodaja,1322,1
+Lopata,"Rabljeno, deluje brezhibno.",1079.91,prodaja,122,9
+Tiskalnik,"Malo vidne obrabe, sicer ok.",556.4,prodaja,405,1
+Gorsko kolo,"Ugodna cena, možen dogovor.",,prodaja,296,4
+Figurice,"Odlično ohranjeno, malo uporabljeno.",905.42,prodaja,1577,7
+Električno kolo,"Kupljeno lani, skoraj novo.",995.24,prodaja,690,3
+Žoga,"Original embalaža, polna oprema.",1370.26,prodaja,1987,4
+Zunanja igrača,"Malo vidne obrabe, sicer ok.",1792.55,prodaja,916,7
+Škarje za živo mejo,Prodam ker ne potrebujem več.,928.01,prodaja,830,9
+Krilo,Prodam zaradi menjave.,229.01,prodaja,680,2
+Plišasta igrača,"Rabljeno, deluje brezhibno.",1703.13,prodaja,98,7
+Vinilne plošče,Zelo dobro ohranjeno.,,prodaja,763,8
+Quad,"Ugodna cena, možen dogovor.",92.32,prodaja,1467,3
+Varilni aparat,"Rabljeno, deluje brezhibno.",1752.25,prodaja,1646,9
+Televizor,Zelo dobro ohranjeno.,1713.61,prodaja,1436,1
+Kompresor,"Rabljeno, deluje brezhibno.",705.86,prodaja,783,9
+Mikrofon,"Brez poškodb, deluje perfektno.",1396.74,prodaja,824,8
+Smučke,Iščem za darilo.,653.06,nakup,997,4
+Trobenta,Potrebujem čim prej.,1145.89,nakup,318,8
+Rolerji,Iščem ugodne ponudbe.,1454.68,nakup,151,4
+Slovar,"Rabljeno, deluje brezhibno.",1202.35,prodaja,1385,6
+Stripovski album,Sprejemam tudi brez embalaže.,676.44,nakup,1809,6
+Mikrofon,Sprejemam tudi brez embalaže.,959.68,nakup,1081,8
+Traktor,Iščem v dobrem stanju.,220.86,nakup,1719,3
+Skuterček,"Brez poškodb, deluje perfektno.",1567.6,prodaja,875,3
+Žoga,"Original embalaža, polna oprema.",1286.89,prodaja,1818,4
+Klaviature,"Original embalaža, polna oprema.",1544.98,prodaja,1340,8
+Skejtbord,"Original embalaža, polna oprema.",800.56,prodaja,451,4
+Jedilna miza,Prosim kontaktirajte z emailom.,128.23,nakup,1900,5
+Biografija,"Kupljeno lani, skoraj novo.",1762.94,prodaja,887,6
+Fotoaparat,"Odlično ohranjeno, malo uporabljeno.",633.21,prodaja,1912,1
+Postelja,"Kupljeno lani, skoraj novo.",813.35,prodaja,1296,5
+Pralni stroj,Sprejemam tudi brez embalaže.,,nakup,723,5
+Smuči,Sprejemam tudi brez embalaže.,358.67,nakup,1750,4
+Pulover,Prodam zaradi menjave.,252.38,prodaja,1314,2
+Pulover,"Kupljeno lani, skoraj novo.",,prodaja,1719,2
+Figurice,"Odlično ohranjeno, malo uporabljeno.",266.24,prodaja,1900,7
+Električno kolo,Iščem za darilo.,917.39,nakup,20,3
+Krožna žaga,Zelo dobro ohranjeno.,1941.56,prodaja,376,9
+Telefon,Prodam zaradi menjave.,1906.84,prodaja,1551,1
+Plišasta igrača,Iščem za darilo.,,nakup,1271,7
+Lopata,"Malo vidne obrabe, sicer ok.",824.49,prodaja,1597,9
+Varilni aparat,Kontaktirajte me po emailu.,865.2,nakup,1837,9
+Avtomobilčki,Zanimajo me različne ponudbe.,1066.22,nakup,715,7
+Zamrzovalnik,Sprejemam tudi malo rabljenega.,251.98,nakup,221,5
+Spletna kamera,Sprejemam tudi brez embalaže.,549.85,nakup,1349,1
+Kitara,"Odlično ohranjeno, malo uporabljeno.",670.85,prodaja,1193,8
+Kapa in rokavice,Iščem za darilo.,,nakup,905,2
+Vinilne plošče,Zelo dobro ohranjeno.,193.65,prodaja,750,8
+Pametna ura,Prodam ker ne potrebujem več.,880.49,prodaja,1344,1
+Konstruktorji,"Malo vidne obrabe, sicer ok.",1800.73,prodaja,1166,7
+Skejtbord,Potrebujem čim prej.,290.72,nakup,366,4
+Smuči,"V dobrem stanju, brez napak.",1198.87,prodaja,712,4
+Učbenik,"Rabljeno, deluje brezhibno.",1182.4,prodaja,534,6
+Družabna igra,Iščem v dobrem stanju.,,nakup,169,7
+Zimska jakna,"Brez poškodb, deluje perfektno.",470.53,prodaja,361,2
+Klaviature,"Original embalaža, polna oprema.",1774.65,prodaja,1874,8
+Figurice,Primerno za vsakdanjo uporabo.,858.49,nakup,38,7
+Traktor,"Znižana cena, hitro!",1056.61,prodaja,132,3
+Zavese,Primerno za vsakdanjo uporabo.,519.95,nakup,911,5
+Pas,"V dobrem stanju, brez napak.",914.92,prodaja,1921,2
+Grablje,"V dobrem stanju, brez napak.",909.48,prodaja,1885,9
+Flavta,Sprejemam tudi brez embalaže.,,nakup,1001,8
+Pulover,Sprejemam tudi brez embalaže.,,nakup,1875,2
+Tepih,Sprejemam tudi malo rabljenega.,360.23,nakup,1616,5
+Zamrzovalnik,"V dobrem stanju, brez napak.",955.75,prodaja,1449,5
+Roman,"Brez poškodb, deluje perfektno.",1718.7,prodaja,714,6
+Roman,"Odlično ohranjeno, malo uporabljeno.",1047.51,prodaja,1189,6
+Kapa in rokavice,Zelo dobro ohranjeno.,186.71,prodaja,580,2
+Brusilnik,"Kupljeno lani, skoraj novo.",1942.13,prodaja,1946,9
+Škarje za živo mejo,"V dobrem stanju, brez napak.",823.46,prodaja,711,9
+Obleka,"Kupljeno lani, skoraj novo.",421.89,prodaja,1366,2
+Zamrzovalnik,Sprejemam tudi brez embalaže.,323.61,nakup,1221,5
+Kitara,"Brez poškodb, deluje perfektno.",,prodaja,1566,8
+Kamp prikolica,"V dobrem stanju, brez napak.",1711.56,prodaja,263,3
+Kavbojke,"Original embalaža, polna oprema.",278.21,prodaja,1368,2
+Televizor,"Brez poškodb, deluje perfektno.",543.82,prodaja,1430,1
+Učbenik,"Ugodna cena, možen dogovor.",733.5,prodaja,1983,6
+Nahrbtnik,Prodam ker ne potrebujem več.,558.25,prodaja,1864,2
+Mikrofon,"Malo vidne obrabe, sicer ok.",1415.63,prodaja,643,8
+Kombi,Iščem ugodne ponudbe.,756.93,nakup,1121,3
+Enciklopedija,Zelo dobro ohranjeno.,,prodaja,1110,6
+Cestno kolo,"Ugodna cena, možen dogovor.",1308.45,prodaja,212,4
+Zunanja igrača,"Znižana cena, hitro!",1814.31,prodaja,1434,7
+Roman,"Malo vidne obrabe, sicer ok.",1982.9,prodaja,1828,6
+Bobni,"Original embalaža, polna oprema.",97.72,prodaja,449,8
+Biografija,"Kupljeno lani, skoraj novo.",1995.38,prodaja,607,6
+Krožna žaga,"V dobrem stanju, brez napak.",160.79,prodaja,1846,9
+Lestev,"Rabljeno, deluje brezhibno.",1116.22,prodaja,1794,9
+Torba,"V dobrem stanju, brez napak.",1330.71,prodaja,1241,2
+Polnilec,Iščem ugodne ponudbe.,949.8,nakup,275,1
+Sončna očala,"Znižana cena, hitro!",1873.97,prodaja,709,2
+Stripovski album,"Odlično ohranjeno, malo uporabljeno.",103.64,prodaja,1567,6
+Smučke,Sprejemam tudi brez embalaže.,,nakup,440,4
+Klimatska naprava,Zelo dobro ohranjeno.,1086.86,prodaja,914,1
+Motor,Sprejemam tudi brez embalaže.,1190.62,nakup,553,3
+Zvočna oprema,"Odlično ohranjeno, malo uporabljeno.",1893.77,prodaja,220,8
+Rolerji,"Original embalaža, polna oprema.",867.59,prodaja,257,4
+Flavta,Prodam zaradi menjave.,189.88,prodaja,991,8
+Računalnik,Prodam zaradi menjave.,1336.64,prodaja,322,1
+Harmonika,"V dobrem stanju, brez napak.",1292.9,prodaja,1338,8
+Zavese,"Odlično ohranjeno, malo uporabljeno.",270.42,prodaja,724,5
+Torba,"Odlično ohranjeno, malo uporabljeno.",720.17,prodaja,1465,2
+Ura,"Rabljeno, deluje brezhibno.",,prodaja,1315,2
+Vlakec,"Odlično ohranjeno, malo uporabljeno.",345.46,prodaja,518,7
+Kompresor,"Kupljeno lani, skoraj novo.",1054.25,prodaja,1272,9
+Kitara,Iščem za darilo.,455.44,nakup,48,8
+Avto,"Rabljeno, deluje brezhibno.",1593.26,prodaja,1462,3
+Šotor,Prodam ker ne potrebujem več.,1264.96,prodaja,1466,4
+Priklopnik,"Brez poškodb, deluje perfektno.",814.88,prodaja,1109,3
+Fitnes naprava,"Kupljeno lani, skoraj novo.",1905.94,prodaja,227,4
+Smuči,"Ugodna cena, možen dogovor.",436.77,prodaja,772,4
+Cestno kolo,"Kupljeno lani, skoraj novo.",,prodaja,1839,4
+Ura,"Malo vidne obrabe, sicer ok.",,prodaja,1218,2
+Potopisna knjiga,"Original embalaža, polna oprema.",1598.97,prodaja,713,6
+Električno kolo,Sprejemam tudi brez embalaže.,1071.61,nakup,889,3
+Otroška knjiga,Zanimajo me različne ponudbe.,,nakup,1002,6
+Barbika,Sprejemam tudi brez embalaže.,,nakup,1087,7
+Barbika,Iščem ugodne ponudbe.,,nakup,1354,7
+Škarje za živo mejo,"Znižana cena, hitro!",443.77,prodaja,555,9
+Tepih,Zanimajo me različne ponudbe.,87.6,nakup,8,5
+Barbika,"Odlično ohranjeno, malo uporabljeno.",388.08,prodaja,1658,7
+Kamp prikolica,"Brez poškodb, deluje perfektno.",84.34,prodaja,264,3
+Jedilna miza,"Brez poškodb, deluje perfektno.",1218.84,prodaja,309,5
+Priklopnik,Prodam zaradi menjave.,1620.49,prodaja,1398,3
+Računalnik,Prodam ker ne potrebujem več.,72.06,prodaja,1291,1
+Brusilnik,"Znižana cena, hitro!",790.79,prodaja,445,9
+Električno kolo,"Kupljeno lani, skoraj novo.",1118.07,prodaja,970,3
+Bunda,Primerno za vsakdanjo uporabo.,84.2,nakup,1355,2
+Biografija,Primerno za vsakdanjo uporabo.,1161.29,nakup,125,6
+Kolesarska čelada,Iščem v dobrem stanju.,1232.21,nakup,829,4
+Trobenta,"Znižana cena, hitro!",556.64,prodaja,1682,8
+Stripovski album,Prodam zaradi menjave.,,prodaja,1007,6
+Cestno kolo,"Malo vidne obrabe, sicer ok.",1892.35,prodaja,1567,4
+Kompresor,Sprejemam tudi malo rabljenega.,741.56,nakup,438,9
+Kompresor,Primerno za vsakdanjo uporabo.,11.42,nakup,1472,9
+Puzzle,Sprejemam tudi brez embalaže.,436.67,nakup,1919,7
+Stojalo za noto,"V dobrem stanju, brez napak.",665.21,prodaja,498,8
+Enciklopedija,Iščem v dobrem stanju.,728.18,nakup,1418,6
+Avtomobilčki,Sprejemam tudi malo rabljenega.,217.37,nakup,1784,7
+Krilo,"Ugodna cena, možen dogovor.",345.02,prodaja,1384,2
+Barbika,Potrebujem čim prej.,1196.18,nakup,1952,7
+Flavta,Prodam ker ne potrebujem več.,466.0,prodaja,104,8
+Hlače,Prodam ker ne potrebujem več.,1210.27,prodaja,1335,2
+Projektor,Iščem v dobrem stanju.,846.58,nakup,1094,1
+Kompresor,Zelo dobro ohranjeno.,1761.99,prodaja,210,9
+Avtomobilčki,Prodam zaradi menjave.,324.0,prodaja,390,7
+Električno kolo,"Ugodna cena, možen dogovor.",1157.96,prodaja,448,3
+Kolesarska čelada,Sprejemam tudi brez embalaže.,,nakup,151,4
+Družabna igra,Prosim kontaktirajte z emailom.,1308.58,nakup,1458,7
+Tiskalnik,"Brez poškodb, deluje perfektno.",656.15,prodaja,927,1
+Tiskalnik,"Znižana cena, hitro!",398.94,prodaja,1498,1
+Cestno kolo,Zanimajo me različne ponudbe.,52.7,nakup,294,4
+Kombi,Prodam ker ne potrebujem več.,1022.85,prodaja,1945,3
+Smuči,Iščem v dobrem stanju.,1292.49,nakup,839,4
+Roman,Zelo dobro ohranjeno.,1183.13,prodaja,1180,6
+Roman,Iščem za darilo.,1098.14,nakup,1609,6
+Tablica,"Original embalaža, polna oprema.",1849.69,prodaja,153,1
+Atlas,"Znižana cena, hitro!",1271.22,prodaja,1438,6
+Zavese,"Odlično ohranjeno, malo uporabljeno.",,prodaja,589,5
+Škarje za živo mejo,Prodam zaradi menjave.,1538.66,prodaja,849,9
+Učbenik,Iščem ugodne ponudbe.,1084.17,nakup,401,6
+Cestno kolo,Prodam zaradi menjave.,878.98,prodaja,881,4
+Fotoaparat,"Ugodna cena, možen dogovor.",1970.67,prodaja,1238,1
+Grablje,"Malo vidne obrabe, sicer ok.",1294.72,prodaja,343,9
+Krožna žaga,Primerno za vsakdanjo uporabo.,1101.56,nakup,1709,9
+Šotor,Iščem ugodne ponudbe.,640.55,nakup,1268,4
+Kamp prikolica,"Rabljeno, deluje brezhibno.",1167.76,prodaja,814,3
+Stripovski album,Iščem za darilo.,1319.7,nakup,1919,6
+Bas kitara,"V dobrem stanju, brez napak.",450.43,prodaja,957,8
+Električno kolo,Prodam zaradi menjave.,217.81,prodaja,1059,3
+Planinski nahrbtnik,Prosim kontaktirajte z emailom.,968.26,nakup,874,4
+Slovar,Zelo dobro ohranjeno.,1027.68,prodaja,1322,6
+Puzzle,"Znižana cena, hitro!",1638.82,prodaja,708,7
+Sončna očala,Sprejemam tudi brez embalaže.,,nakup,167,2
+Zavese,Kontaktirajte me po emailu.,,nakup,1741,5
+Fotoaparat,"Ugodna cena, možen dogovor.",1481.18,prodaja,1500,1
+Učbenik,Zanimajo me različne ponudbe.,344.95,nakup,1660,6
+Projektor,Prodam zaradi menjave.,773.49,prodaja,1430,1
+Šal,"Kupljeno lani, skoraj novo.",,prodaja,732,2
+Varilni aparat,Zanimajo me različne ponudbe.,,nakup,400,9
+Skejtbord,"Ugodna cena, možen dogovor.",945.94,prodaja,1085,4
+Telefon,"Ugodna cena, možen dogovor.",1447.33,prodaja,67,1
+Grablje,"Kupljeno lani, skoraj novo.",738.64,prodaja,1695,9
+Krilo,Prodam ker ne potrebujem več.,,prodaja,169,2
+Enciklopedija,Sprejemam tudi malo rabljenega.,,nakup,655,6
+Varilni aparat,"Rabljeno, deluje brezhibno.",208.05,prodaja,939,9
+Televizor,Iščem za darilo.,1270.9,nakup,1282,1
+Telefon,Zanimajo me različne ponudbe.,251.79,nakup,927,1
+Telefon,"Malo vidne obrabe, sicer ok.",1087.11,prodaja,1954,1
+Zimski škornji,"Brez poškodb, deluje perfektno.",1526.87,prodaja,216,2
+Sesalec,Zelo dobro ohranjeno.,1100.11,prodaja,1591,5
+Grablje,Zelo dobro ohranjeno.,1909.0,prodaja,1948,9
+Spletna kamera,"Rabljeno, deluje brezhibno.",1500.09,prodaja,1966,1
+Krožna žaga,Zelo dobro ohranjeno.,,prodaja,558,9
+Kolesarska čelada,Primerno za vsakdanjo uporabo.,693.82,nakup,1885,4
+Stojalo za noto,"Kupljeno lani, skoraj novo.",1241.15,prodaja,1229,8
+Mešalnik za beton,Iščem v dobrem stanju.,432.85,nakup,102,9
+Vinilne plošče,Primerno za vsakdanjo uporabo.,1176.02,nakup,1772,8
+Tepih,Sprejemam tudi brez embalaže.,716.85,nakup,1152,5
+Ura,"Rabljeno, deluje brezhibno.",725.77,prodaja,1549,2
+Teniški lopar,"Kupljeno lani, skoraj novo.",268.32,prodaja,1834,4
+Majica,Prodam zaradi menjave.,775.73,prodaja,653,2
+Lego kocke,"Kupljeno lani, skoraj novo.",880.21,prodaja,947,7
+Krilo,Kontaktirajte me po emailu.,667.68,nakup,123,2
+Kamp prikolica,"Brez poškodb, deluje perfektno.",,prodaja,103,3
+Bobni,"Malo vidne obrabe, sicer ok.",1278.11,prodaja,275,8
+Pralni stroj,"Brez poškodb, deluje perfektno.",172.38,prodaja,1123,5
+Zamrzovalnik,"Ugodna cena, možen dogovor.",385.73,prodaja,1224,5
+Obleka,"V dobrem stanju, brez napak.",12.13,prodaja,1652,2
+Barbika,"Kupljeno lani, skoraj novo.",1569.3,prodaja,1698,7
+Klaviature,"Original embalaža, polna oprema.",467.95,prodaja,1456,8
+Kompresor,Iščem za darilo.,,nakup,322,9
+Zamrzovalnik,Iščem za darilo.,249.66,nakup,1122,5
+Stripovski album,Prodam ker ne potrebujem več.,1175.18,prodaja,1049,6
+Vrtalnik,Prodam ker ne potrebujem več.,1250.5,prodaja,1480,9
+Skuterček,"Kupljeno lani, skoraj novo.",296.6,prodaja,920,3
+Vrtalnik,Sprejemam tudi brez embalaže.,50.26,nakup,454,9
+Vlakec,"Odlično ohranjeno, malo uporabljeno.",,prodaja,770,7
+Zimska jakna,Prodam ker ne potrebujem več.,,prodaja,304,2
+Tekaški copati,Iščem ugodne ponudbe.,,nakup,243,4
+Vrtalnik,"Malo vidne obrabe, sicer ok.",1776.54,prodaja,276,9
+Harmonika,Iščem za darilo.,342.36,nakup,1946,8
+Vrtna garnitura,Prodam zaradi menjave.,796.09,prodaja,1693,5
+Obleka,Zanimajo me različne ponudbe.,242.34,nakup,877,2
+Avto,Kontaktirajte me po emailu.,1481.5,nakup,1096,3
+Stripovski album,Primerno za vsakdanjo uporabo.,234.84,nakup,1829,6
+Brivnik,Prosim kontaktirajte z emailom.,526.5,nakup,1194,1
+Saksofon,Zanimajo me različne ponudbe.,,nakup,322,8
+Zamrzovalnik,Prodam ker ne potrebujem več.,698.78,prodaja,160,5
+Harmonika,"Ugodna cena, možen dogovor.",841.52,prodaja,751,8
+Flavta,"Znižana cena, hitro!",1766.3,prodaja,1542,8
+Žoga,"V dobrem stanju, brez napak.",1871.71,prodaja,1424,4
+Police,Prodam zaradi menjave.,,prodaja,1216,5
+Kapa in rokavice,"Odlično ohranjeno, malo uporabljeno.",1126.51,prodaja,1556,2
+Kapa in rokavice,"V dobrem stanju, brez napak.",1841.93,prodaja,387,2
+Figurice,"Malo vidne obrabe, sicer ok.",1218.95,prodaja,1244,7
+Grablje,"Znižana cena, hitro!",1947.68,prodaja,968,9
+Krilo,"Odlično ohranjeno, malo uporabljeno.",1733.04,prodaja,90,2
+Svetilka,"Odlično ohranjeno, malo uporabljeno.",748.16,prodaja,392,5
+Flavta,Iščem ugodne ponudbe.,1022.06,nakup,538,8
+Kavč,Iščem za darilo.,,nakup,572,5
+Veslač,Prodam zaradi menjave.,799.88,prodaja,1912,4
+Spletna kamera,"Znižana cena, hitro!",635.37,prodaja,1909,1
+Harmonika,"Rabljeno, deluje brezhibno.",63.31,prodaja,1396,8
+Quad,Iščem v dobrem stanju.,968.39,nakup,1506,3
+Družabna igra,"Kupljeno lani, skoraj novo.",903.89,prodaja,159,7
+Planinski nahrbtnik,"Kupljeno lani, skoraj novo.",700.62,prodaja,1387,4
+Harmonika,Sprejemam tudi brez embalaže.,1065.92,nakup,1155,8
+Grablje,"Znižana cena, hitro!",1688.92,prodaja,403,9
+Traktor,Iščem ugodne ponudbe.,124.21,nakup,1719,3
+Slovar,"Brez poškodb, deluje perfektno.",1070.14,prodaja,407,6
+Pulover,"Znižana cena, hitro!",201.58,prodaja,64,2
+Mikrofon,"Original embalaža, polna oprema.",907.4,prodaja,45,8
+Mikrofon,Iščem ugodne ponudbe.,719.1,nakup,1775,8
+Puzzle,"Ugodna cena, možen dogovor.",1940.5,prodaja,1572,7
+Plišasta igrača,Prodam zaradi menjave.,993.43,prodaja,257,7
+Kavbojke,"Znižana cena, hitro!",405.09,prodaja,1281,2
+Kuharica,"Odlično ohranjeno, malo uporabljeno.",1468.52,prodaja,1560,6
+Denarnica,Sprejemam tudi malo rabljenega.,1236.07,nakup,555,2

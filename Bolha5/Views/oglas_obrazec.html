@@ -1,0 +1,93 @@
+% rebase('osnova.html', naslov=naslov_strani)
+
+<div style="max-width:600px; margin:0 auto;">
+    <div style="margin-bottom:1.2rem;">
+        <a href="/" style="color:var(--oranzna); font-weight:600;">Nazaj</a>
+    </div>
+
+    <div class="form-kartica">
+        <h2 class="title is-4" style="color:var(--oranzna); margin-bottom:1.5rem;">
+            Ustvari oglas
+        </h2>
+
+        <form method="POST" action="{{akcija}}">
+
+            <div class="field">
+                <label class="label">Naslov oglasa *</label>
+                <div class="control">
+                    <input class="input" type="text" name="naslov"
+                           value="{{obrazec.get('naslov', '')}}"
+                           placeholder="" required>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Tip oglasa *</label>
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select name="tip" required>
+                                    <option value="" disabled {{'selected' if not obrazec.get('tip') else ''}}>
+                                        Izberi tip
+                                    </option>
+                                    <option value="prodaja"
+                                        {{'selected' if obrazec.get('tip') == 'prodaja' else ''}}>
+                                        Prodaja
+                                    </option>
+                                    <option value="nakup"
+                                        {{'selected' if obrazec.get('tip') == 'nakup' else ''}}>
+                                        Nakup
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Cena (€)</label>
+                        <div class="control">
+                            <input class="input" type="number" name="cena" step="0.01" min="0"
+                                   value="{{obrazec.get('cena', '')}}"
+                                   placeholder="">
+                        </div>
+                        <p class="help">Pustite prazno za "Po dogovoru"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Kategorija *</label>
+                <div class="control">
+                    <div class="select is-fullwidth">
+                        <select name="kategorija_id" required>
+                            <option value="" disabled {{'selected' if not obrazec.get('kategorija_id') else ''}}>
+                                Izberi kategorijo
+                            </option>
+                            % for k in kategorije:
+                            <option value="{{k.id}}"
+                                {{'selected' if str(k.id) == str(obrazec.get('kategorija_id', '')) else ''}}>
+                                {{k.naziv}}
+                            </option>
+                            % end
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Opis</label>
+                <div class="control">
+                    <textarea class="textarea" name="opis" rows="5"
+                              placeholder="">{{obrazec.get('opis', '')}}</textarea>
+                </div>
+            </div>
+
+            <div style="display:flex; gap:0.7rem; margin-top:1.5rem;">
+                <button class="button is-primary" type="submit">Ustvari oglas</button>
+                <a href="/" class="button is-light">Prekliči</a>
+            </div>
+        </form>
+    </div>
+</div>
