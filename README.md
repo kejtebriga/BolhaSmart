@@ -38,3 +38,9 @@ kategorija_id – tuji ključ na tabelo kategorija
 Uporabnik je v relaciji 1 : N z oglasom, saj lahko objavi več oglasov. Oglas pripada eni kategoriji, kategorija pa lahko vsebuje več oglasov.
 
   <img width="909" height="488" alt="UPORABNIK (1)" src="https://github.com/user-attachments/assets/20ec97ae-279b-45f6-949a-8b9bcb5edace" />
+
+## Zagon:
+1. Namesti knjižnjico bcrypt: `pip install bcrypt`
+2. Poženi bazo: `python baza.py`
+3. Zaženi aplikacijo: `python spletni_vmesnik.py`
+4. Odpri brskalnik na: `http://127.0.0.1:8080/`
