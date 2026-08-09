@@ -28,7 +28,7 @@ def vnesi_ceno():
     """Prebere ceno. Prazen vnos pomeni 'po dogovoru' (None).
     Ob ne-številskem vnosu ponovi samo vnos cene."""
     while True:
-        vnos = input("Cena (€, pusti prazno za 'po dogovoru'): ").strip()
+        vnos = input("Cena (pusti prazno za po dogovoru): ").strip()
         if vnos == "":
             return None
         try:
