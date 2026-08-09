@@ -81,13 +81,6 @@ def status(preveri):
 
 
 @status
-def admin(uporabnik):
-    if not uporabnik or not uporabnik.admin:
-        bottle.abort(401, "Dostop prepovedan! Samo za administratorje.")
-    return (uporabnik,)
-
-
-@status
 def prijavljen(uporabnik):
     if not uporabnik:
         bottle.redirect('/prijava/')
@@ -308,11 +301,11 @@ def oglasi_uredi_post(uporabnik, ido):
 
     try:
         oglas.posodobi()
-        nastavi_sporocilo("✓ Oglas je bil uspešno posodobljen!")
-        bottle.redirect(f'/oglasi/podatki/{ido}/')
     except Exception:
         nastavi_sporocilo("Napaka pri urejanju oglasa!")
         bottle.redirect(f'/oglasi/uredi/{ido}/')
+    nastavi_sporocilo("✓ Oglas je bil uspešno posodobljen!")
+    bottle.redirect(f'/oglasi/podatki/{ido}/')
 
 
 # ── Izbriši oglas ─────────────────────────────────────────────────────────────
@@ -331,39 +324,6 @@ def oglasi_izbrisi(uporabnik, ido):
     except Exception:
         nastavi_sporocilo("Napaka pri brisanju oglasa!")
     bottle.redirect('/')
-
-
-# ── Admin: uporabniki ─────────────────────────────────────────────────────────
-
-@bottle.get('/admin/uporabniki/')
-@bottle.view('admin_uporabniki.html')
-@admin
-def admin_uporabniki(uporabnik):
-    vsi = Uporabnik.poisci_vse()
-    return dict(vsi_uporabniki=vsi)
-
-
-@bottle.get('/admin/uporabniki/<idu:int>/')
-@bottle.view('admin_uporabnik_uredi.html')
-@admin
-def admin_uporabnik_uredi(uporabnik, idu):
-    target = Uporabnik.poisci_po_id(idu)
-    return dict(target=target)
-
-
-@bottle.post('/admin/uporabniki/<idu:int>/')
-@admin
-def admin_uporabnik_uredi_post(uporabnik, idu):
-    ime = bottle.request.forms.ime
-    priimek = bottle.request.forms.priimek
-    email = bottle.request.forms.email
-    target = Uporabnik(id=idu, ime=ime, priimek=priimek, email=email)
-    try:
-        target.posodobi()
-        nastavi_sporocilo("✓ Podatki so bili uspešno posodobljeni.")
-    except Exception:
-        nastavi_sporocilo("Napaka pri posodabljanju!")
-    bottle.redirect('/admin/uporabniki/')
 
 
 # ── Globalne predloge ─────────────────────────────────────────────────────────

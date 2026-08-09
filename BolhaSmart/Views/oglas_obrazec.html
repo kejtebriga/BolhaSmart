@@ -7,7 +7,7 @@
 
     <div class="form-kartica">
         <h2 class="title is-4" style="color:var(--oranzna); margin-bottom:1.5rem;">
-            Ustvari oglas
+            {{'Uredi oglas' if naslov_strani == 'Uredi oglas' else 'Ustvari oglas'}}
         </h2>
 
         <form method="POST" action="{{akcija}}">
@@ -85,7 +85,7 @@
             </div>
 
             <div style="display:flex; gap:0.7rem; margin-top:1.5rem;">
-                <button class="button is-primary" type="submit">Ustvari oglas</button>
+                <button class="button is-primary" type="submit">{{'Shrani' if naslov_strani == 'Uredi oglas' else 'Ustvari oglas'}}</button>
                 <a href="/" class="button is-light">Prekliči</a>
             </div>
         </form>

@@ -279,6 +279,11 @@
             <a href="/moji-oglasi/" class="navbar-item">
                 <i class="fas fa-list" style="margin-right:5px;"></i> Moji oglasi
             </a>
+            % if uporabnik.admin:
+            <a href="/admin/uporabniki/" class="navbar-item">
+                <i class="fas fa-users-cog" style="margin-right:5px;"></i> Admin
+            </a>
+            % end
             % end
         </div>
         <div class="navbar-end">

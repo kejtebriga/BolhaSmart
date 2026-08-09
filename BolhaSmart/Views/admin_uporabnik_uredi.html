@@ -1,0 +1,45 @@
+% rebase('osnova.html', naslov='Admin – Uredi uporabnika')
+
+<div style="max-width:600px; margin:0 auto;">
+    <div style="margin-bottom:1.2rem;">
+        <a href="/admin/uporabniki/" style="color:var(--oranzna); font-weight:600;">Nazaj na seznam</a>
+    </div>
+
+    <div class="form-kartica">
+        <h2 class="title is-4" style="color:var(--oranzna); margin-bottom:1.5rem;">
+            Uredi uporabnika
+        </h2>
+
+        % if target:
+        <form method="POST" action="/admin/uporabniki/{{target.id}}/">
+            <div class="field">
+                <label class="label">Ime</label>
+                <div class="control">
+                    <input class="input" type="text" name="ime"
+                           value="{{target.ime or ''}}" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Priimek</label>
+                <div class="control">
+                    <input class="input" type="text" name="priimek"
+                           value="{{target.priimek or ''}}" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" name="email"
+                           value="{{target.email or ''}}" required>
+                </div>
+            </div>
+            <div style="display:flex; gap:0.7rem; margin-top:1.5rem;">
+                <button class="button is-primary" type="submit">Shrani</button>
+                <a href="/admin/uporabniki/" class="button is-light">Prekliči</a>
+            </div>
+        </form>
+        % else:
+        <p style="color:#999;">Uporabnik ne obstaja.</p>
+        % end
+    </div>
+</div>

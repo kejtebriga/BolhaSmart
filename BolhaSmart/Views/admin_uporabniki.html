@@ -1,0 +1,41 @@
+% rebase('osnova.html', naslov='Admin – Uporabniki')
+
+<div class="hero-bolha">
+    <h1>Upravljanje uporabnikov</h1>
+    <p>Pregled in urejanje registriranih uporabnikov.</p>
+</div>
+
+<div class="form-kartica">
+    <p style="margin-bottom:1rem; color:#888;">
+        Skupaj uporabnikov: <strong>{{len(vsi_uporabniki)}}</strong>
+    </p>
+    <div style="overflow-x:auto;">
+        <table class="table is-fullwidth is-striped is-hoverable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ime</th>
+                    <th>Priimek</th>
+                    <th>Email</th>
+                    <th>Admin</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                % for u in vsi_uporabniki:
+                <tr>
+                    <td>{{u.id}}</td>
+                    <td>{{u.ime}}</td>
+                    <td>{{u.priimek}}</td>
+                    <td>{{u.email}}</td>
+                    <td>{{'Da' if u.admin else 'Ne'}}</td>
+                    <td>
+                        <a href="/admin/uporabniki/{{u.id}}/"
+                           class="button is-small is-warning">Uredi</a>
+                    </td>
+                </tr>
+                % end
+            </tbody>
+        </table>
+    </div>
+</div>

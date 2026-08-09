@@ -18,10 +18,10 @@ CREATE TABLE kategorija (
 
 CREATE TABLE oglas (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    naslov TEXT,
+    naslov TEXT NOT NULL,
     opis TEXT,
     cena REAL,
-    tip TEXT,
+    tip TEXT NOT NULL CHECK (tip IN ('prodaja', 'nakup')),
     uporabnik_id INTEGER,
     kategorija_id INTEGER,
     FOREIGN KEY (uporabnik_id) REFERENCES uporabnik (id),

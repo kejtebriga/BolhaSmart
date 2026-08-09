@@ -242,8 +242,24 @@ class Oglas:
             """, (self.naslov, self.opis, self.cena, self.tip, self.kategorija_id, self.id))
 
     @staticmethod
+    def _besede(*nizi):
+        """Vrne množico besed (male črke, brez zelo kratkih) iz podanih nizov."""
+        besede = set()
+        for niz in nizi:
+            if niz:
+                for b in niz.lower().split():
+                    b = b.strip(".,!?;:()\"'")
+                    if len(b) >= 3:
+                        besede.add(b)
+        return besede
+
+    @staticmethod
     def poisci_ujemanja(moj_oglas):
-        """Poišče ujemajoče oglase (ista kategorija, nasproten tip) z JOIN na kategorijo."""
+        """
+        Poišče ujemajoče oglase (ista kategorija, nasproten tip) in jih razvrsti
+        po relevantnosti: najprej po prekrivanju besed v naslovu/opisu, nato po
+        bližini cene. Nič se ne izloči - le razvrsti (najbolj relevantni na vrhu).
+        """
         conn = dbapi.connect(BAZA)
         conn.row_factory = dbapi.Row
         nasproten_tip = 'nakup' if moj_oglas.tip == 'prodaja' else 'prodaja'
@@ -255,11 +271,36 @@ class Oglas:
                 FROM oglas
                 JOIN kategorija ON oglas.kategorija_id = kategorija.id
                 WHERE oglas.kategorija_id = ? AND oglas.tip = ? AND oglas.id != ?
-                ORDER BY oglas.id DESC
             """, (moj_oglas.kategorija_id, nasproten_tip, moj_oglas.id))
-            return [Oglas(v['id'], v['naslov'], v['opis'], v['cena'],
-                         v['tip'], v['uporabnik_id'], v['kategorija_id'])
-                    for v in cur]
+            zadetki = [Oglas(v['id'], v['naslov'], v['opis'], v['cena'],
+                             v['tip'], v['uporabnik_id'], v['kategorija_id'])
+                       for v in cur]
+
+        moje_besede = Oglas._besede(moj_oglas.naslov, moj_oglas.opis)
+
+        def v_stevilo(c):
+            """Cena kot float; če manjka (None/'' /nepravilno), vrne None."""
+            try:
+                return float(c)
+            except (TypeError, ValueError):
+                return None
+
+        moja_cena = v_stevilo(moj_oglas.cena)
+
+        def relevantnost(o):
+            # 1) prekrivanje besed v naslovu/opisu (več skupnih = bolj relevantno)
+            skupne = len(moje_besede & Oglas._besede(o.naslov, o.opis))
+            # 2) bližina cene (manjša razlika = bolj relevantno); manjkajoča cena -> na konec
+            druga_cena = v_stevilo(o.cena)
+            if moja_cena is not None and druga_cena is not None:
+                razlika_cene = abs(moja_cena - druga_cena)
+            else:
+                razlika_cene = float('inf')
+            # razvrstitev: največ skupnih besed, nato najmanjša razlika cene, nato najnovejši
+            return (-skupne, razlika_cene, -o.id)
+
+        zadetki.sort(key=relevantnost)
+        return zadetki
 
     def izbrisi(self):
         """Izbriši oglas iz baze."""

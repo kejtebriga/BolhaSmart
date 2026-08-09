@@ -69,8 +69,35 @@ def uvozi_oglase(baza, csv_datoteka):
         conn.close()
 
 
+def ustvari_admina(baza, email="admin@bolha.si", geslo="admin123"):
+    """
+    Ustvari administratorskega uporabnika (če s tem emailom še ne obstaja).
+    Admin se namenoma NE hrani v CSV na repozitoriju, ampak se ustvari tukaj.
+    Prijava: admin@bolha.si / admin123
+    Admin lahko ureja in briše katerikoli oglas.
+    """
+    import bcrypt
+    zgostitev = bcrypt.hashpw(geslo.encode('utf-8'), bcrypt.gensalt())
+    try:
+        conn = dbapi.connect(baza)
+        with conn:
+            cur = conn.cursor()
+            obstaja = cur.execute(
+                "SELECT 1 FROM uporabnik WHERE email = ?", (email,)
+            ).fetchone()
+            if obstaja is None:
+                cur.execute(
+                    "INSERT INTO uporabnik (ime, priimek, email, geslo, admin) "
+                    "VALUES (?, ?, ?, ?, 1)",
+                    ("Admin", "Admin", email, zgostitev)
+                )
+    finally:
+        conn.close()
+
+
 if __name__ == "__main__":
     uvozi_skripto('shema.sql', BAZA)
     uvozi_uporabnike(BAZA, 'podatki/uporabnik.csv')
     uvozi_kategorije(BAZA, 'podatki/kategorija.csv')
     uvozi_oglase(BAZA, 'podatki/oglas.csv')
+    ustvari_admina(BAZA)
