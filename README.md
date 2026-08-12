@@ -37,7 +37,7 @@ Tabela oglas – glavna tabela z oglasi:
 ## ER diagram:
 Uporabnik je v relaciji 1 : N z oglasom, saj lahko objavi več oglasov. Oglas pripada eni kategoriji, kategorija pa lahko vsebuje več oglasov.
 
-  <img width="909" height="488" alt="UPORABNIK (1)" src="https://github.com/user-attachments/assets/20ec97ae-279b-45f6-949a-8b9bcb5edace" />
+<img width="1150" height="623" alt="er_diagram" src="https://github.com/user-attachments/assets/d28a2e78-68d9-4870-9ba9-abc6443f802a" />
 
 ## Zagon:
 Aplikacija se nahaja v imeniku `BolhaSmart`, ki ni korenski imenik repozitorija, zato se je treba najprej premakniti vanj.
